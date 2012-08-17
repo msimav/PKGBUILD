@@ -12,7 +12,7 @@ depends=('pygtk' 'python2' 'python2-gobject' 'pywebkitgtk' 'libdbusmenu' 'python
 makedepends=('python2-distutils-extra')
 install=$pkgname.install
 source=("https://launchpad.net/${pkgname}/trunk/${pkgver}/+download/${pkgname}_${pkgver}.tar.gz")
-md5sums=('f73c917edc5ab62598f607eff67ab263')
+md5sums=('abde2547f4e5766f1d1d7cae8599bf75')
 
 package() {
   cd ${pkgname}
