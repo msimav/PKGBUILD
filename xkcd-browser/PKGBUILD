@@ -1,0 +1,22 @@
+# Maintainer: msimav
+# Copied directly from nitrotasks, thanks to Ner0
+
+pkgname=xkcd-browser
+pkgver=12.07.6
+pkgrel=1
+pkgdesc="a simple way to browse through your favorite XKCD comics"
+arch=('any')
+url="https://launchpad.net/xkcd-browser"
+license=('GPLv3')
+depends=('pygtk' 'python2' 'python2-gobject' 'pywebkitgtk' 'libdbusmenu' 'python-notify' 'libwebkit3')
+makedepends=('python2-distutils-extra')
+install=$pkgname.install
+source=("https://launchpad.net/${pkgname}/trunk/${pkgver}/+download/${pkgname}_${pkgver}.tar.gz")
+md5sums=('f73c917edc5ab62598f607eff67ab263')
+
+package() {
+  cd ${pkgname}
+
+  python2 setup.py install --root="$pkgdir/"
+
+}
