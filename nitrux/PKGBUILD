@@ -1,7 +1,7 @@
 # Maintainer: msimav  <mustafa1991@gmail.com>
 
 pkgname=nitrux-icon-theme
-pkgver=2.0c
+pkgver=2.1a
 pkgrel=1
 pkgdesc="new squared icon set for Linux that sports clean lines, smooth gradients, and simple icon logos"
 url="http://deviantn7k1.deviantart.com/art/Nitrux-OS-Icons-293634207"
@@ -10,7 +10,7 @@ license=('Creative Commons')
 source=(http://www.deviantart.com/download/293634207/nitrux_os_icons_by_deviantn7k1-d4utllr.7z)
 depends=('librsvg')
 makedepends=('p7zip')
-md5sums=('3fb9a10d174aafbedf75c2504226310e')
+md5sums=('22f23004257f186c4818bc94c5d8ef91')
 
 build() {
   cd ${srcdir}
